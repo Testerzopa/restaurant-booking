@@ -38,7 +38,7 @@ form.addEventListener('submit', async function(event) {
 
     try {
         
-        const response = await fetch('http://localhost:3000/booking', {
+        const response = await fetch('https://restaurant-booking-z94l.onrender.com', {
             method: 'POST',   
             headers: {
                 'Content-Type': 'application/json',
