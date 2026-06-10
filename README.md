@@ -1,6 +1,7 @@
 # restaurant-booking
 
 เว็บไซต์ระบบจองโต๊ะร้านอาหาร (Frontend & Backend) ที่มาพร้อมระบบตรวจสอบเงื่อนไขวันเวลาการจองฝั่งหน้าบ้าน และเชื่อมต่อระบบส่งข้อมูลข้ามระบบแจ้งเตือนเข้าสู่แอปพลิเคชัน LINE (LINE Messaging API) ของทางร้านอาหารโดยตรงแบบ Real-time
+-----> https://restaurant-booking-787w.vercel.app/
 
 ## 🌐 Live Demo & Deployment
 
@@ -37,7 +38,7 @@
 ```text
 ├── frontend/             # โค้ดส่วนหน้าเว็บทั้งหมด (สำหรับ Deploy บน Vercel)
 │   ├── index.html        # หน้าจอหลักของฟอร์มจองร้านอาหาร
-│   ├── app.js            # ตรรกะตรวจเช็กข้อมูลและ Fetch ไปหาหลังบ้าน
+│   └── app.js            # ตรรกะตรวจเช็กข้อมูลและ Fetch ไปหาหลังบ้าน
 │   
 │
 └── ── server.js          # ไฟล์หลักเปิดเซิร์ฟเวอร์ Express.js
@@ -51,17 +52,15 @@
 
 1. **คัดลอกคลังโค้ด (Clone Repository)**
    ```bash
-   git clone https://github.comื่อยูสเซอร์ของคุณ/ชื่อโฟลเดอร์โปรเจกต์.git
+   git clone https://github.com/Testerzopa/restaurant-booking.git
    cd ชื่อโฟลเดอร์โปรเจกต์
    ```
 
 2. **ติดตั้งและรันฝั่งหลังบ้าน (Backend)**
    ```bash
-   cd backend
    npm install
-   node index.js
+   node server.js
    ```
-   *อย่าลืมเข้าไปเปลี่ยนรหัส `channelAccessToken` และ `targetId` ในโค้ดให้เป็นรหัสของตัวคุณเองครับ*
 
 3. **รันฝั่งหน้าบ้าน (Frontend)**
    * สามารถเปิดไฟล์ `frontend/index.html` บนเบราว์เซอร์เพื่อเริ่มกรอกข้อมูลและทดสอบระบบได้ทันที!
